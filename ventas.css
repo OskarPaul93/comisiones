@@ -1,35 +1,119 @@
+/* RESET BÁSICO */
+* {
+  box-sizing: border-box;
+}
+
+/* BODY */
 body {
-    font-family: Arial;
-    background-color: #0f172a;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  padding: 20px;
 }
 
+/* CONTENEDOR */
 .contenedor {
-    background-color: #1e293b;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
+  background-color: #020617;
+  padding: 25px;
+  border-radius: 15px;
+
+  width: 100%;
+  max-width: 400px;
+
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.2);
 }
 
+/* TITULO */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #22d3ee;
+}
+
+/* GRUPOS */
+.grupo {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+/* INPUTS */
 input {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 5px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+
+  font-size: 16px;
 }
 
+/* BOTÓN */
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #22c55e;
-    border: none;
-    color: white;
-    cursor: pointer;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+
+  background: #22c55e;
+  border: none;
+  border-radius: 10px;
+
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: 0.3s;
 }
 
 button:hover {
-    background-color: #16a34a;
+  background: #16a34a;
+  transform: scale(1.03);
+}
+
+/* RESULTADOS */
+.resultados {
+  margin-top: 20px;
+  background: #0f172a;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.resultados h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #38bdf8;
+}
+
+/* 📱 RESPONSIVE PARA CELULARES */
+@media (max-width: 480px) {
+  .contenedor {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
