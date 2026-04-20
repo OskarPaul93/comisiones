@@ -15,17 +15,20 @@
 
         <div class="grupo">
             <label>Salario Base</label>
-            <input type="text" id="txtSueldoBase">
+<input type="text" id="txtSueldoBase" onblur="validarCampo('txtSueldoBase','errSueldoBase')">
+<div id="errSueldoBase" class="error"></div>
         </div>
 
         <div class="grupo">
             <label>Número de ventas</label>
-            <input type="text" id="txtVentas">
+<input type="text" id="txtVentas" onblur="validarCampo('txtVentas','errVentas')">
+<div id="errVentas" class="error"></div>        
         </div>
 
         <div class="grupo">
             <label>Precio del producto</label>
-            <input type="text" id="txtPrecio">
+<input type="text" id="txtPrecio" onblur="validarCampo('txtPrecio','errPrecio')">
+<div id="errPrecio" class="error"></div>
         </div>
 
         <button onclick="calcular()">Calcular Comisión</button>
